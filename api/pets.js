@@ -1,13 +1,13 @@
 'use strict'
 
-module.exports.getAll = function* getAll() {
-  this.body = 'getAll called'
+module.exports.getAll = async function getAll(ctx) {
+  ctx.body = 'getAll called'
 }
 
-module.exports.create = function* create() {
-  this.body = 'create called'
+module.exports.create = async function create(ctx) {
+  ctx.body = 'create called'
 }
 
-module.exports.get = function* get() {
-  this.body = 'get called'
+module.exports.get = async function get(ctx) {
+  ctx.body = 'get called'
 }
